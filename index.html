@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<s>, initial-scale=1.0">
+    <title>Absensi</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="leaves">
+            <div class="set">
+                <div><img src="leaf_01.png" alt=""></div>
+                <div><img src="leaf_02.png" alt=""></div>
+                <div><img src="leaf_03.png" alt=""></div>
+                <div><img src="leaf_04.png" alt=""></div>
+                <div><img src="leaf_01.png" alt=""></div>
+                <div><img src="leaf_02.png" alt=""></div>
+                <div><img src="leaf_03.png" alt=""></div>
+                <div><img src="leaf_04.png" alt=""></div>
+            </div>
+        </div>
+        <img src="bg.jpg" class="bg" alt="">
+        <img src="girl.png" class="girls" alt="">
+        <div class="absen">
+            <h2>Absensi</h2>
+            <div class="inputBox">
+                <input type="text" name="" placeholder="Nama Lengkapmu" id="">
+            </div>
+            <div class="inputBox">
+                <select name="status" id="status">
+                <option value="" disabled selected>Pilih Status</option>
+                <option value="mahasiswa">Mahasiswa</option>
+                <option value="dosen">Dosen</option>
+                <option value="pegawai">Pegawai</option>
+                </select>
+            </div>
+            
+            <div class="inputBox">
+                <input type="text" name="" placeholder="NIP/NIDN/NIM" value="" id="idStatus">
+            </div>
+            <div class="inputBox">
+                <input type="text" name="" placeholder="Program Studi" id="prodi">
+            </div>
+            <div class="inputBox">
+                <input type="hidden" name="" placeholder="TTD" id="signature">
+                <canvas id="signatureCanvas"></canvas>
+                <div class="aksi_canvas">
+                    <button class="btn btn-primary" id="sig-submitBtn">Simpan</button>
+				    <button class="btn btn-default" id="sig-clearBtn">Clear</button>
+                </div>
+            </div>
+            <div class="inputBox">
+                <img id="sig-image" src=""/>
+            </div>
+            <textarea id="sig-dataUrl" class="form-control" style="display: none;"  rows="5">Data URL for your signature will go here!</textarea>
+            <div class="inputBox">
+                <button id="btn" type="submit" value="login">Simpan</button>
+            </div>
+            
+        </div>
+        <img src="trees.png" class="trees" alt="">
+    </section>
+    <script src="form.js"></script>
+    <script src="signature_pad.min.js"></script>
+    <script src="canvas.js"></script>
+
+</body>
+</html>
