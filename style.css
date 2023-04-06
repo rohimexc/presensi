@@ -12,7 +12,7 @@ section{
     align-items: center;
     width: 100%;
     height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 section .bg, section .trees{
     position: absolute;
